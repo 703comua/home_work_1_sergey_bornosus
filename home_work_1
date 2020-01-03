@@ -1,0 +1,27 @@
+Apache + PHP 7.4.1
+	docker run -d -p 8081:80 --name php-apache-7-4-1_2 -v ${PWD}:/var/www/html php:7.4.1-apache	
+	http://127.0.0.1:8081/
+	https://prnt.sc/qf826b
+	PHP Version 7.4.1
+	
+
+Apache + PHP 7.0 
+	docker run -d -p 8082:80 --name php-apache-7-0 -v ${PWD}:/var/www/html php:7.0-apache
+	http://127.0.0.1:8082/
+	https://prnt.sc/qf842m
+	PHP Version 7.0.33
+
+Apache + PHP 5.4 
+	docker run -d -p 8083:80 --name php-apache-5-4 -v ${PWD}:/var/www/html php:5.4-apache
+	http://127.0.0.1:8083/
+	https://prnt.sc/qf85un
+	PHP Version 5.4.45
+	
+docker ps
+	https://prnt.sc/qf86t0
+
+docker run --name my_mysql -e MYSQL_ROOT_PASSWORD=secret -d mysql:5.7.28
+	создали контейнер с именем my_mysql и установили туда mysql:5.7.28
+	
+docker ps
+	https://prnt.sc/qfht8n

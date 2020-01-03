@@ -1,0 +1,52 @@
+Docker Toolbox
+docker
+docker-compose
+docker-machine
+
+
+docker-desktop скачать установить
+
+Чем оперирует докер
+Inages и Containers
+образы и контейнеры
+
+апа
+
+hub.docker.com
+
+docker run parametrs
+
+https://docs.docker.com/engine/reference/run/
+docker run -p 80:80 my_image srvices nginx start
+
+
+
+
+
+
+>> https://hub.docker.com/_/php
+
+1) в конселе пишем команду
+docker run -d -p 80:80 --name php-apache-7-4-1 -v "$PWD":/var/www/html php:7.4.1-apache
+
+что бы запустить контейнер и пробросить 80-ый порт локалхоста на 80-й порт в контейнере из образа (php:7.4.1-apache) а если его нет, он его предварительно сам скачает.
+
+--name php-apache-7-4-1
+создаем имя для контейнера
+
+-d 
+запуск в фоновом режиме
+
+docker ps -a 
+показывает все контейнеры: работающие, стопнутые и аварийно завершенные
+
+
+
+
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp php:7.4-cli php your-script.php
+
+$ docker run --name my_mysql -e MYSQL_ROOT_PASSWORD=secret -d mysql:5.7.28
+
+Миша
+Проектус 
+Provectus
